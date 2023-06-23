@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+
+        }
+        .card{
+            padding: 23px 25px;
+            margin: 23px;
+            background-color: antiquewhite;
+            /* box-shadow: offset-x offset-y color;
+            box-shadow: offset-x offset-y  blur-radius color;
+            box-shadow: offset-x offset-y blur-radius spread-radius color; */
+
+            /* box-shadow: 10px 13px green;
+            box-shadow: -10px -13px green;
+            box-shadow: 7px 5px 10px green; */
+            box-shadow: -7px -5px 10px green;
+            box-shadow: -7px -5px 10px  13px green;
+
+            box-shadow: -7px -5px 10px  13px rgba(71,172,172,0.5);
+            box-shadow: 3px 5px green,4px 6px red;
+
+
+           
+        }
+         .card h2{
+            text-shadow: 3px 4px red;
+            text-shadow: 3px 4px 5px green;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+          <h2>This is C++ course</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum perferendis, adipisci, amet saepe officia dicta impedit id in placeat suscipit culpa tempora, quo voluptatem.</p>
+        </div>
+        <div class="card" id="card-2">
+        <h2>This is the HTML course</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, voluptate? Ea ipsum aliquid fugiat rerum modi accusantium explicabo necessitatibus tenetur suscipit, natus, iure quia!</p>
+        </div>
+        <div class="card" id="card-3">
+         <h2>card-3</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro suscipit, distinctio animi quam dolore iusto quo velit non fuga veniam cupiditate voluptates amet quidem.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
