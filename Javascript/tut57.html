@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js events</title>
+    <style>
+      #btn {
+        border: 2px solid black;
+        background-color: red;
+        color: white;
+        padding: 8px;
+        font-weight: bold;
+        border-radius: 9px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Browser events:
+   click
+   contectmenu 
+   mouseover /mouseout 
+   mousedown / mouseup 
+   mousemove
+
+   submit 
+   focus 
+    
+   DOMContentLoaded 
+
+   transitioned -->
+
+    <div class="container">
+      <h1>This is heading</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus sed
+        molestiae tenetur eius sapiente earum libero, pariatur aperiam enim
+        inventore consectetur autem culpa architecto quae, ex assumenda
+        veritatis dicta ducimus? Eligendi culpa ipsum cupiditate?
+      </p>
+    </div>
+    <button id="btn" onclick="toogleHide()">Show/hide</button>
+
+    <script>
+        function toogleHide(){
+            let btn=document.getElementById('btn');
+            let para=document.getElementById('para');
+            para.style.display='none';
+        }
+    </script>
+  </body>
+</html>
